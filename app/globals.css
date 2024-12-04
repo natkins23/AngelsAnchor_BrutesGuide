@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer body {
+    body {
+        @apply overflow-x-hidden;
+    }
+    p {
+        @apply relative w-[20rem] sm:w-[23rem] md:w-screen text-center  py-5 font-semibold italic text-gray-300 sm:text-sm  md:text-lg lg:text-2xl xl:text-3xl;
+    }
+    p,
+    div,
+    span,
+    h1,
+    h2,
+    h3 {
+        @apply transition-all  duration-100;
+    }
+    .animalIcon {
+        @apply relative cursor-pointer w-20 h-20 sm:w-32 sm:h-32 md:w-44 md:h-44 lg:w-60 lg:h-60 xl:w-72 xl:h-72;
+    }
+
+    .heartIcon {
+        @apply w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-52 xl:h-52 2xl:w-60 2xl:h-60 text-red-900 drop-shadow-2xl;
+    }
+    .artsy {
+        @apply relative h-[320px] w-[320px] md:h-[550px] md:w-[550px]  lg:h-[650px] lg:w-[650px] xl:h-[750px] xl:w-[750px];
+    }
+}
+
+body,
+.honor-bg {
+    background: linear-gradient(-45deg, #b95d41, #c43169, #25a3d1, #1cb893);
+    background-size: 2000% 2000%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
