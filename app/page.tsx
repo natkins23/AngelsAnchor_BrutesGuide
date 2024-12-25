@@ -35,7 +35,6 @@ const photos = [
         '/anna_maria/selfy.jpg', 
         '/anna_maria/selfy2.jpg',
         '/anna_maria/flower.jpg',
-        '/anna_maria/knees.png',
         '/anna_maria/selfy3.jpg',
         '/anna_maria/elephant.jpg', 
         '/anna_maria/selfy4.jpg',
@@ -86,7 +85,7 @@ function PhotoCarousel() {
                 <div className="animalIcon">
                 <Image
                         src="/anna_maria/brute.jpg"
-                        alt="lion"
+                        alt="brute"
                         fill
                         style={{ objectFit: 'cover' }}
                         className="relative"
