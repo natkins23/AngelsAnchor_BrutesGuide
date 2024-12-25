@@ -47,7 +47,7 @@ const Snowfall: FC<SnowfallProps> = ({
 
     // 5) Animation function
     function update() {
-      ctx.clearRect(0, 0, width, height);
+      ctx!.clearRect(0, 0, width, height);
 
       for (const flake of flakes) {
         flake.y += flake.speed;
@@ -63,10 +63,10 @@ const Snowfall: FC<SnowfallProps> = ({
           flake.x = width;
         }
 
-        ctx.beginPath();
-        ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-        ctx.fillStyle = snowColor;
-        ctx.fill();
+        ctx!.beginPath();
+        ctx!.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+        ctx!.fillStyle = snowColor;
+        ctx!.fill();
       }
 
       requestAnimationFrame(update);
