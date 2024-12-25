@@ -56,7 +56,7 @@ function PhotoCarousel() {
     }, [])
 
     return (
-        <div className="relative w-1/3 h-64 md:h-96 lg:h-[50rem] overflow-hidden-">
+        <div className="relative w-1/2 h-64 md:h-96 lg:h-[50rem] overflow-hidden-">
             {photos.map((photo, index) => (
                 <div
                     key={index}
@@ -187,7 +187,7 @@ function PhotoCarousel() {
 <p>
     Through moments of joy, their connection had grown, <br />
     A bond taking root with a seed that had seemingly been sown. <br />
-    A Beauty and Beast, a dream she’d foreseen, <br />
+    A Beauty and Beast, a dream she’d foresee, <br />
     A tale turned to life, more than mere fantasy. <br />
     For both saw the other as a mirror profound, <br />
     Their love, a reflection of treasures they’d found. <br />
