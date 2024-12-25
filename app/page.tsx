@@ -56,7 +56,7 @@ function PhotoCarousel() {
     }, [])
 
     return (
-        <div className="relative w-1/2 h-64 md:h-96 lg:h-[50rem] overflow-hidden-">
+        <div className="relative w-2/3 md:w-1/2 h-64 md:h-96 lg:h-[50rem] overflow-hidden-">
             {photos.map((photo, index) => (
                 <div
                     key={index}
@@ -119,7 +119,7 @@ function PhotoCarousel() {
             <PhotoCarousel></PhotoCarousel>
             <AudioPlayer src="nathanAudio.mp3"></AudioPlayer>
 
-            <section className="relative flex flex-col items-center space-y-1 py-2 text-sm ">
+            <section className="relative flex flex-col items-center space-y-1 py-2  ">
             <p>
     He worried and wondered, could he compete, <br />
     In her world of beauty, so pure, with a name oh so sweet? <br />
