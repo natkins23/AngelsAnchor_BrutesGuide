@@ -119,7 +119,7 @@ function PhotoCarousel() {
             <PhotoCarousel></PhotoCarousel>
             <AudioPlayer src="nathanAudio.mp3"></AudioPlayer>
 
-            <section className="relative flex flex-col items-center space-y-1 py-2">
+            <section className="relative flex flex-col items-center space-y-1 py-2 text-sm ">
             <p>
     He worried and wondered, could he compete, <br />
     In her world of beauty, so pure, with a name oh so sweet? <br />
