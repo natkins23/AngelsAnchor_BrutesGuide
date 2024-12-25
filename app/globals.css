@@ -48,3 +48,34 @@ body,
         background-position: 0% 50%;
     }
 }
+/* Santa container */
+.santa-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  /* Santa GIF */
+  .santa-gif {
+    position: absolute;
+    transition: top 10s linear, left 10s linear, transform 0.5s ease-in-out; /* Smooth transitions */
+  }
+  
+  /* Responsive sizes for Santa */
+  @media (max-width: 768px) {
+    .santa-gif img {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .santa-gif img {
+      width: 100px;
+    }
+  }
+  
